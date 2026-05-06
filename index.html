@@ -3,25 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cesar F. Mendoza | Developer</title>
+    <title>César F Mendoza | Fullstack Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="bg-gray-900 text-white font-sans">
-    <div class="min-h-screen flex flex-col justify-center items-center p-6 text-center">
-        <h1 class="text-5xl font-bold mb-4 text-blue-400">Cesar F. Mendoza</h1>
-        <p class="text-xl text-gray-400 mb-8 max-w-md">
-            Desarrollador enfocado en soluciones .NET y gestión de infraestructura web.
-        </p>
-        
-        <div class="flex gap-4">
-            <a href="https://facturas.cesarfmendoza.dev" target="_blank" 
-               class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg transition">
-               Ver Proyecto Facturas
-            </a>
-            <a href="#" class="border border-gray-600 hover:bg-gray-800 px-6 py-2 rounded-lg transition">
-               Mi LinkedIn
-            </a>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navegación -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="font-bold text-xl text-blue-700">CFM.dev</span>
+            <div class="space-x-6 hidden md:block">
+                <a href="#experiencia" class="hover:text-blue-600 transition">Experiencia</a>
+                <a href="#proyectos" class="hover:text-blue-600 transition">Proyectos</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Habilidades</a>
+            </div>
         </div>
-    </div>
+    </nav>
+
+    <!-- Hero / Presentación -->
+    <header class="bg-gradient-to-r from-slate-800 to-slate-900 text-white py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h1 class="text-5xl font-extrabold tracking-tight">César Fernando Mendoza Graciano</h1>
+            <p class="text-2xl mt-4 text-slate-300 font-light">Ingeniero en Sistemas | Desarrollador Web</p>
+            <div class="mt-8 flex gap-4">
+                <span class="bg-blue-600/20 border border-blue-400 text-blue-400 px-4 py-1 rounded-full text-sm">+5 años de trayectoria</span>
+                <span class="bg-green-600/20 border border-green-400 text-green-400 px-4 py-1 rounded-full text-sm">Disponible para nuevas oportunidades</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto py-16 px-6">
+        
+        <!-- Sección de Proyectos en Vivo -->
+        <section id="proyectos" class="mb-20">
+            <h2 class="text-3xl font-bold mb-10 flex items-center gap-3">
+                <i class="fas fa-rocket text-blue-600"></i> Proyectos en Producción
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Proyecto Facturas -->
+                <div class="group bg-white rounded-xl shadow-md overflow-hidden border border-slate-100 hover:border-blue-500 transition-all">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold group-hover:text-blue-600 transition">Sistema de Facturación</h3>
+                            <span class="bg-slate-100 text-slate-600 text-[10px] uppercase font-bold px-2 py-1 rounded">Live</span>
+                        </div>
+                        <p class="text-slate-600 mb-6 leading-relaxed">
+                            Plataforma de gestión de comprobantes fiscales desplegada de punta a punta.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-8 text-xs font-mono">
+                            <!-- Backend -->
+                            <span class="bg-blue-100 text-blue-700 px-2 py-1 rounded">ASP.NET Core</span>
+                            <span class="bg-blue-100 text-blue-700 px-2 py-1 rounded">SQL Server</span>
+                            
+                            <!-- Frontend -->
+                            <span class="bg-purple-100 text-purple-700 px-2 py-1 rounded">Bootstrap 5</span>
+                            <span class="bg-purple-100 text-purple-700 px-2 py-1 rounded">Razor Pages</span>
+                            
+                            <!-- Infraestructura -->
+                            <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded">Railway</span>
+                            <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded">Cloudflare</span>
+                        </div>
+                        <a href="https://facturas.cesarfmendoza.dev" target="_blank" class="flex items-center gap-2 text-blue-600 font-bold hover:gap-4 transition-all">
+                            Explorar Proyecto <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyecto To-Do List (ASP.NET + React) -->
+                <div class="group bg-white rounded-xl shadow-md overflow-hidden border border-slate-100 hover:border-blue-500 transition-all">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-4 group-hover:text-blue-600 transition text-slate-400 italic">To-Do List API & React</h3>
+                        <p class="text-slate-600 mb-6 leading-relaxed">
+                            Arquitectura desacoplada con API en ASP.NET Core y cliente en React.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-8 text-xs font-mono">
+                            <span class="bg-slate-50 text-slate-500 px-2 py-1 rounded">ASP.NET Core</span>
+                            <span class="bg-slate-50 text-slate-500 px-2 py-1 rounded">React</span>
+                            <span class="bg-slate-50 text-slate-500 px-2 py-1 rounded">REST API</span>
+                        </div>
+                        <span class="text-slate-400 text-sm font-medium italic">En proceso de despliegue...</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiencia Profesional -->
+        <section id="experiencia" class="mb-20 bg-white p-10 rounded-2xl shadow-sm border border-slate-100">
+            <h2 class="text-3xl font-bold mb-12">Experiencia Relevante</h2>
+            
+            <div class="space-y-12 relative before:absolute before:left-0 before:h-full before:w-0.5 before:bg-slate-200 pl-8">
+                <!-- AP Interfaces / Coppel -->
+                <div class="relative">
+                    <div class="absolute -left-10 mt-1.5 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow"></div>
+                    <h4 class="text-xl font-bold">Desarrollador web/software</h4>
+                    <div class="flex flex-wrap items-center gap-x-4 mb-2">
+                        <p class="text-blue-600 font-medium">Coppel S.A. de C.V.</p>
+                        <span class="text-slate-400 text-sm font-medium">Enero 2024 — Presente</span> <!-- Aquí van las fechas -->
+                    </div>
+                    <p class="text-slate-600 text-sm italic">Revisión de Bases de Datos. Resolución de vulnerabilidades
+PHP/Javascript. Diagramas, manuales de usuario.</p>
+                
+                </div>
+
+                <!-- Eureka Sigma -->
+                <div class="relative">
+                    <div class="absolute -left-10 mt-1.5 w-4 h-4 rounded-full bg-slate-300 border-4 border-white shadow"></div>
+                    <h4 class="text-xl font-bold">Desarrollador Web</h4>
+                    <div class="flex flex-wrap items-center gap-x-4 mb-2">
+                        <p class="text-blue-600 font-medium">Eureka Sigma</p>
+                        <span class="text-slate-400 text-sm font-medium">Enero 2024 — Presente</span> <!-- Aquí van las fechas -->
+                    </div>
+                    <p class="text-slate-600 text-sm italic">Front-end, diseño, maquetado de sitios web con Laravel, PHP, HTML5, CSS3, JavaScript, JQuery..</p>
+                </div>
+
+                <!-- DGS Prosolutions -->
+                <div class="relative">
+                    <div class="absolute -left-10 mt-1.5 w-4 h-4 rounded-full bg-slate-300 border-4 border-white shadow"></div>
+                    <h4 class="text-xl font-bold">Desarrollador Web</h4>
+                    <div class="flex flex-wrap items-center gap-x-4 mb-2">
+                        <p class="text-blue-600 font-medium">DGS Prosolutions</p>
+                        <span class="text-slate-400 text-sm font-medium">Enero 2024 — Presente</span> <!-- Aquí van las fechas -->
+                    </div>
+                    <p class="text-slate-600 text-sm italic">Desarrollo y mantenimiento de sitios web mediante PHP, HTML5, hojas de estilo en CSS3,
+                     con bases de datos MySQL, y funciones en jQuery, Ajax y Json, y uso de APIs externas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stack Tecnológico -->
+        <section id="skills" class="text-center">
+            <h2 class="text-2xl font-bold mb-8">Stack Tecnológico</h2>
+            <div class="flex flex-wrap justify-center gap-3">
+                <span class="px-6 py-2 bg-white border border-slate-200 rounded-lg shadow-sm font-semibold hover:bg-blue-50 hover:border-blue-200 transition cursor-default">ASP.NET Core</span>
+                <span class="px-6 py-2 bg-white border border-slate-200 rounded-lg shadow-sm font-semibold hover:bg-blue-50 hover:border-blue-200 transition cursor-default">PHP (Laravel)</span>
+                <span class="px-6 py-2 bg-white border border-slate-200 rounded-lg shadow-sm font-semibold hover:bg-blue-50 hover:border-blue-200 transition cursor-default">React</span>
+                <span class="px-6 py-2 bg-white border border-slate-200 rounded-lg shadow-sm font-semibold hover:bg-blue-50 hover:border-blue-200 transition cursor-default">Python (Django)</span>
+                <span class="px-6 py-2 bg-white border border-slate-200 rounded-lg shadow-sm font-semibold hover:bg-blue-50 hover:border-blue-200 transition cursor-default">SQL Server / MySQL</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 text-center text-sm">
+        <p>&copy; 2026 César Fernando Mendoza Graciano. Desplegado profesionalmente en Railway.</p>
+    </footer>
+
 </body>
 </html>
